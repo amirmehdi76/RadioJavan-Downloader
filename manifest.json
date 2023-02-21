@@ -1,0 +1,27 @@
+{
+    "name": "RadioJavan Downloader",
+    "description": "RJ Downloader | https://github.com/amirmehdi76",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "icons": {
+        "128": "./RJL.png"
+    },
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "action": {
+        "default_popup": "./popup.html",
+        "default_icons": {
+            "128": "./RJL.png"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://play.radiojavan.com/*"
+    ]
+}
